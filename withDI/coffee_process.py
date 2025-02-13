@@ -5,10 +5,9 @@ from .coffee import Coffee
 
 class CoffeeProcess:
 
-    _water_provider: iWaterProvider
 
     def __init__(self, water_provider: iWaterProvider):
-        self._water_provider = water_provider
+        self._water_provider: iWaterProvider = water_provider
 
     def make_coffee(self):
 
